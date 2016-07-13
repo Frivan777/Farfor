@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Farfor</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Обновить</string>
+    <string name="title_activity_single_fragment">SingleFragmentActivity</string>
+    <string name="title_activity_fra">Fra</string>
+</resources>

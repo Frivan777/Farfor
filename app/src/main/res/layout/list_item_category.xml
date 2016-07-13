@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/category_list_item_imageView"
+        android:layout_width="56dp"
+        android:layout_height="56dp"/>
+    <TextView
+        android:id="@+id/category_list_item_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:text="Здесь будет категория"/>
+
+</LinearLayout>

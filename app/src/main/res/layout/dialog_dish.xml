@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish_dialog_imageView"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/dish_dialog_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здесь будет название"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/dish_dialog_weight_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здесь будет вес"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здесь будет цена"
+            android:paddingTop="5dp"
+            android:id="@+id/dish_dialog_price_textView"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здесь будет описание"
+            android:id="@+id/dish_dialog_description_textView"
+            android:paddingTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

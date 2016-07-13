@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Адрес:г.Минск, ул. Стахановская, 7, 24."
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/addressTextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Телефон:+375(33)611-11-11"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:id="@+id/phoneTextView"/>
+</LinearLayout>
