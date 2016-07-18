@@ -83,10 +83,9 @@ public class ListFoodFragment extends ListFragment {
         Bitmap bitmap = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bos);
 
-        Intent i = new Intent(getActivity(), AboutDishActivity.class);
-        i.putExtra(AboutDishFragment.EXTRA_BITMAP, bos.toByteArray());
-        i.putExtra(AboutDishFragment.EXTRA_UUID, dish.getUuid());
-        i.putExtra(AboutDishFragment.EXTRA_NAME, dish.getName());
+
+        Intent i = AboutDishActivity.newIntent(getActivity(), bos.toByteArray(), dish.getUuid(), dish.getName());
+
         //AboutDishDialog dialog = AboutDishDialog.newInstance(bos.toByteArray(), uuid);
         //dialog.show(getActivity().getSupportFragmentManager(), TAG);
         startActivity(i);
