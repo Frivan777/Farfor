@@ -31,8 +31,8 @@ public class AboutDishDialog extends DialogFragment {
         ImageView imageView = (ImageView)v.findViewById(R.id.dish_dialog_imageView);
         Bitmap bitmap = BitmapFactory.decodeByteArray(buffer, 0, buffer.length);
         imageView.setImageBitmap(bitmap);
-        TextView textViewName = (TextView)v.findViewById(R.id.dish_dialog_name_textView);
-        textViewName.setText(dish.getName());
+        //TextView textViewName = (TextView)v.findViewById(R.id.dish_dialog_name_textView);
+        //textViewName.setText(dish.getName());
         TextView textViewPrice = (TextView)v.findViewById(R.id.dish_dialog_price_textView);
         textViewPrice.setText("Цена:" + dish.getPrice());
         TextView textViewDescription = (TextView)v.findViewById(R.id.dish_dialog_description_textView);

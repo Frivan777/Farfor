@@ -30,7 +30,8 @@ public class AboutDishFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.dialog_dish, container, false);
+        //View v = inflater.inflate(R.layout.dialog_dish, container, false);
+        View v = inflater.inflate(R.layout.activity_about_dish_scrolling, container, false);
 
         byte[] buffer = getArguments().getByteArray(EXTRA_BITMAP);
         UUID position = (UUID)getArguments().getSerializable(EXTRA_UUID);
@@ -40,14 +41,14 @@ public class AboutDishFragment extends Fragment {
         ImageView imageView = (ImageView)v.findViewById(R.id.dish_dialog_imageView);
         Bitmap bitmap = BitmapFactory.decodeByteArray(buffer, 0, buffer.length);
         imageView.setImageBitmap(bitmap);
-        TextView textViewName = (TextView)v.findViewById(R.id.dish_dialog_name_textView);
-        textViewName.setText(dish.getName());
+        //TextView textViewName = (TextView)v.findViewById(R.id.dish_dialog_name_textView);
+        //textViewName.setText(dish.getName());
         TextView textViewPrice = (TextView)v.findViewById(R.id.dish_dialog_price_textView);
-        textViewPrice.setText("Цена:" + dish.getPrice());
+        textViewPrice.setText(dish.getPrice() + " р");
         TextView textViewDescription = (TextView)v.findViewById(R.id.dish_dialog_description_textView);
         textViewDescription.setText("Описание:" + dish.getDescription());
         TextView textViewWeight = (TextView)v.findViewById(R.id.dish_dialog_weight_textView);
-        textViewWeight.setText("Вес:" + dish.getWeight());
+        textViewWeight.setText(dish.getWeight());
 
         return v;
     }

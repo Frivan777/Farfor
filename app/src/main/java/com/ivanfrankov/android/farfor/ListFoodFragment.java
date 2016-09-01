@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class ListFoodFragment extends ListFragment {
 
@@ -84,7 +83,8 @@ public class ListFoodFragment extends ListFragment {
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bos);
 
 
-        Intent i = AboutDishActivity.newIntent(getActivity(), bos.toByteArray(), dish.getUuid(), dish.getName());
+        //Intent i = AboutDishActivity.newIntent(getActivity(), bos.toByteArray(), dish.getUuid(), dish.getName());
+        Intent i = AboutDishScrollingActivity.newIntent(getActivity(), bos.toByteArray(), dish.getUuid(), dish.getName());
 
         //AboutDishDialog dialog = AboutDishDialog.newInstance(bos.toByteArray(), uuid);
         //dialog.show(getActivity().getSupportFragmentManager(), TAG);

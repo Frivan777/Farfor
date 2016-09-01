@@ -58,7 +58,7 @@ public class ImageDownloader<Token> extends HandlerThread {
         try {
             if (bitmap == null) {
                 byte[] bitmapBytes = new FlickFetch().getUrlByte(url);
-                final Bitmap bitmapNew = decodeSampledBitmapFromByte(bitmapBytes, 300, 170);
+                final Bitmap bitmapNew = decodeSampledBitmapFromByte(bitmapBytes, 512, 300);
                 LruCacheForImage.get().addBitmapToMemoryCache(imageKey, bitmapNew);
                 mResponseHadler.post(new Runnable() {
 
